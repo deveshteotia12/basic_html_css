@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+        body{
+            background-color:#23457c;
+        }
+        .box{
+            width: 400px;
+            background: #ffffff;
+            height:550px;
+            margin:auto;
+            margin-top: 50px;
+        }
+        .box h2{
+            text-align: center;
+            padding-top: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+        }
+        .top{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .form1 label{
+            font-size: 20px;
+            margin:20px 20px;
+            margin-top: 20px;
+        } 
+        .form1 input{
+            width:360px;
+            margin: 5px 20px 5px 20px;
+            height: 30px;
+            border: black 1px;
+            border-style: double;
+            border-radius: 15px;
+        }
+        .button1 button{
+            background-color: seagreen;
+            border: none;
+            width: 360px;
+            margin: 5px 20px 5px 20px;
+            height: 30px;
+            font-size: 20px;
+        }
+        .finish{
+            text-align: center;
+            font-size: 18px;
+        }
+        .finish a{
+            color: seagreen;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Sign Up</h2>
+        <p class='top'>It's free and only takes a minute</p>
+        <div class="form1">
+            <form>
+                <label for='fname'>First Name</label><br>
+                <input type="text" id='fname' name='fname'><br>
+                <label for='lname'>Last Name</label><br>
+                <input type="text" id='lname' name='lname'><br>
+                <label for='email'>Email</label><br>
+                <input type='email' id='email' name='email'><br>
+                <label for='password'>Password</label><br>
+                <input type='password' id='password' name='password'><br>
+                <label for='password'>Confirm Password</label>
+                <input type='password' id='password' name='password'>
+            </form>
+        </div>
+        <div class="button1">
+            <button>Sign up</button>
+        </div>
+        <p class='top'>By clicking the Sign Up button,you agree to our<br><a href='#'>Terms & Conditions</a> and <a href='#'>Privacy Policy</a></p>
+    </div>
+    <p class="finish">Already have an Account?<a href='#'>Login here</a></p>
+</body>
+</html>
